@@ -4,263 +4,660 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Shankar Aushdhalaya - Traditional Ayurvedic consultations in Sarafa Bazar, Jabalpur. Continuing the legacy of Shri Mahesh Dutt Shastri Ji.">
-  <title>Shankar Aushdhalaya | Ayurveda in Jabalpur</title>
+
+  <title>Shankar Aushdhalaya | Ayurvedic Consultation in Jabalpur</title>
+  <meta name="description" content="Explore personalised Ayurvedic consultations at Shankar Aushdhalaya, Jabalpur, with Dr. Rajaish Sharma, bringing over 30 years of experience. Consultations starting at ₹699.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://shankaraushdhalaya.com/">
+  <meta name="theme-color" content="#183d30">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shankar Aushdhalaya | Traditional Ayurveda, Personalised Care">
+  <meta property="og:description" content="Discover our family heritage of Ayurveda and book a personalised consultation in Jabalpur.">
+  <meta property="og:url" content="https://shankaraushdhalaya.com/">
+  <meta property="og:image" content="https://shankaraushdhalaya.com/family.jpg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --green: #183e30;
-      --light: #f8f6ed;
-      --gold: #b28b51;
-      --text: #29372f;
+      --green: #183d30;
+      --green2: #285744;
+      --gold: #ad8550;
+      --cream: #faf8f1;
+      --pale: #f0f1e8;
+      --ink: #23372d;
+      --muted: #66756b;
+      --line: #e3e5da;
+      --white: #fff;
     }
+
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: 'DM Sans', sans-serif;
-      color: var(--text);
-      background: var(--light);
+      color: var(--ink);
+      background: var(--cream);
       line-height: 1.7;
     }
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-      line-height: 1.2;
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    button { font: inherit; }
+    .container { max-width: 1180px; margin: auto; padding: 0 24px; }
+    section { padding: 94px 0; scroll-margin-top: 80px; }
+    h1,h2,h3,.brand { font-family: 'Playfair Display', serif; }
+    h1,h2,h3,p { margin-top: 0; }
+    h1 { font-size: clamp(45px, 6vw, 78px); line-height: 1.14; letter-spacing: -1.8px; }
+    h2 { font-size: clamp(32px, 4vw, 49px); line-height: 1.2; letter-spacing: -.8px; }
+    h3 { font-size: 23px; line-height: 1.35; }
+    p { color: var(--muted); }
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 18px;
     }
-    a { text-decoration: none; }
-    .container { max-width: 1120px; margin: auto; padding: 0 24px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 24px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: .2s;
+      cursor: pointer;
+      border: 1px solid var(--green);
+    }
+    .btn-primary { background: var(--green); color: white; }
+    .btn-primary:hover { background: var(--green2); transform: translateY(-2px); }
+    .btn-outline { color: var(--green); background: transparent; }
+    .btn-outline:hover { background: #e8ede5; }
+    .btn-light { background: #fff; color: var(--green); border-color: #fff; }
+    .buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+    .center { text-align: center; }
+    .center p { max-width: 660px; margin: 0 auto 32px; }
+
     header {
-      background: #fffdf7;
-      border-bottom: 1px solid #e9e5d8;
+      background: rgba(250,248,241,.97);
+      border-bottom: 1px solid var(--line);
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 100;
+      backdrop-filter: blur(12px);
     }
-    nav {
+    .nav {
+      min-height: 82px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      min-height: 78px;
       gap: 20px;
     }
-    .brand {
-      font-family: 'Playfair Display', serif;
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--green);
-    }
+    .brand { font-size: 25px; font-weight: 700; color: var(--green); line-height: 1.1; }
     .brand small {
       display: block;
-      font: 10px 'DM Sans', sans-serif;
-      letter-spacing: 2px;
+      font: 600 10px 'DM Sans', sans-serif;
       color: var(--gold);
+      letter-spacing: 2px;
+      margin-top: 8px;
     }
-    .navlinks { display: flex; gap: 25px; }
-    .navlinks a { color: var(--green); font-size: 14px; }
-    .btn {
-      display: inline-block;
-      background: var(--green);
-      color: white;
-      padding: 13px 23px;
-      border-radius: 5px;
-      font-weight: 600;
-      font-size: 14px;
-    }
-    .btn-outline {
-      background: transparent;
-      color: var(--green);
-      border: 1px solid var(--green);
-    }
+    .navlinks { display: flex; align-items: center; gap: 27px; }
+    .navlinks a { font-size: 13px; font-weight: 600; }
+    .navlinks a:hover { color: var(--gold); }
+    .navlinks .btn { color: white; padding: 11px 17px; }
+
     .hero {
-      padding: 105px 0;
-      background: linear-gradient(115deg, #f7f3e6, #e6eee3);
+      background: linear-gradient(115deg, #f9f6ec, #e7ede2);
+      padding: 95px 0;
+      overflow: hidden;
     }
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 60px;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 75px;
       align-items: center;
     }
-    .eyebrow {
-      color: #99723c;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 12px;
-      font-weight: 700;
+    .hero h1 { margin-bottom: 25px; }
+    .hero h1 em { font-style: normal; color: var(--gold); }
+    .hero p { font-size: 17px; max-width: 570px; margin-bottom: 30px; }
+    .hero-image { position: relative; }
+    .hero-image img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      object-position: center 25%;
+      border-radius: 220px 220px 12px 12px;
+      border: 7px solid rgba(255,255,255,.7);
+      box-shadow: 0 25px 60px rgba(23,50,35,.13);
     }
-    h1 { font-size: clamp(42px, 5vw, 70px); color: var(--green); margin: 20px 0; }
-    .hero p { font-size: 18px; max-width: 570px; }
-    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
-    .hero-art {
-      border: 1px solid #d6c8a9;
-      border-radius: 160px 160px 12px 12px;
-      min-height: 390px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: radial-gradient(circle, #f9f4db, #b9cdb8);
-      font-size: 110px;
+    .experience {
+      position: absolute;
+      bottom: 25px;
+      left: -35px;
+      background: white;
+      border-radius: 8px;
+      padding: 20px 25px;
+      box-shadow: 0 12px 35px rgba(0,0,0,.12);
     }
-    section { padding: 85px 0; }
-    .section-title { font-size: 42px; color: var(--green); margin: 12px 0 25px; }
-    .heritage { background: white; }
-    .two-col {
+    .experience strong {
+      display: block;
+      font: 700 32px 'Playfair Display', serif;
+      color: var(--green);
+    }
+    .experience span { font-size: 12px; color: var(--muted); }
+
+    .trustbar { background: var(--green); padding: 24px 0; }
+    .trust-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .trust-grid div { text-align: center; color: white; font-size: 13px; }
+    .trust-grid strong { display: block; color: #e5c895; font-size: 17px; }
+
+    .split {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 55px;
+      gap: 80px;
       align-items: center;
     }
-    .portrait {
+    .photo {
       width: 100%;
-      max-height: 520px;
+      height: 520px;
       object-fit: cover;
-      object-position: center 20%;
       border-radius: 8px;
-      background: #e8e5dd;
+      box-shadow: 0 18px 45px rgba(0,0,0,.08);
     }
+    .split p { margin-bottom: 18px; }
+    .highlight {
+      border-left: 3px solid var(--gold);
+      padding: 13px 20px;
+      margin: 25px 0;
+      background: #f2f0e6;
+      color: var(--green);
+      font-weight: 600;
+    }
+
+    .pale { background: var(--pale); }
     .cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3,1fr);
       gap: 22px;
-      margin-top: 35px;
+      margin-top: 42px;
     }
     .card {
       background: white;
-      border: 1px solid #e7e5db;
+      padding: 35px 28px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      transition: .2s;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 14px 35px rgba(0,0,0,.06); }
+    .card .symbol { font-size: 30px; margin-bottom: 20px; }
+    .card h3 { color: var(--green); margin-bottom: 12px; }
+    .card p { font-size: 14px; margin-bottom: 0; }
+
+    .heritage-photo {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      object-position: center 20%;
       border-radius: 8px;
-      padding: 30px;
+      filter: saturate(.85);
     }
-    .card h3 { color: var(--green); font-size: 23px; }
-    .practitioner { background: #eaf0e8; }
-    .contact { background: var(--green); color: white; text-align: center; }
-    .contact h2 { color: white; }
-    .contact p { color: #e2e8df; }
-    .contact .btn { background: #f2e4c7; color: var(--green); }
-    footer {
-      background: #102d22;
-      color: #d6e2d8;
-      text-align: center;
-      padding: 25px;
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 35px;
+      margin-top: 45px;
+    }
+    .step { padding: 25px 12px; }
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      background: #e6ebdf;
+      border-radius: 50%;
+      color: var(--green);
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .step p { font-size: 14px; }
+
+    .booking {
+      background: var(--green);
+      color: white;
+      position: relative;
+    }
+    .booking .eyebrow { color: #e4c08a; }
+    .booking h2 { color: white; }
+    .booking p { color: #d5dfd7; }
+    .price {
+      font-family: 'Playfair Display', serif;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 1.1;
+      margin: 15px 0;
+    }
+    .price small { font: 500 16px 'DM Sans', sans-serif; }
+    .booking .btn { margin-top: 12px; }
+    .booking-note { font-size: 12px; margin-top: 20px; }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 22px;
+      margin-top: 35px;
+    }
+    .review-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    .review-card p { margin: 0; }
+
+    footer { background: #102c22; padding: 60px 0 25px; color: white; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 45px; }
+    footer p, footer a { color: #c4d1c8; font-size: 14px; }
+    footer h3 { color: white; font-size: 20px; }
+    footer a:hover { color: white; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.13);
+      margin-top: 45px;
+      padding-top: 22px;
+      font-size: 12px;
+      color: #b5c4b8;
+    }
+    .disclaimer { font-size: 12px; color: #a9bbae; max-width: 850px; margin-top: 18px; }
+
+    .floating-wa {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      z-index: 110;
+      background: #247e52;
+      color: white;
+      padding: 14px 19px;
+      border-radius: 40px;
+      font-weight: 700;
       font-size: 13px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.2);
     }
-    @media(max-width: 760px) {
-      .navlinks { display: none; }
-      .hero { padding: 65px 0; }
-      .hero-grid, .two-col, .cards { grid-template-columns: 1fr; }
-      .hero-art { min-height: 240px; font-size: 80px; }
-      section { padding: 60px 0; }
-      .section-title { font-size: 34px; }
+    .floating-wa:hover { background: #17643f; }
+
+    @media (max-width: 900px) {
+      .navlinks { gap: 13px; }
+      .navlinks a:not(.btn) { display: none; }
+      .hero-grid,.split { grid-template-columns: 1fr; gap: 40px; }
+      .hero { padding: 60px 0; }
+      .hero-image { max-width: 560px; margin: auto; width: 100%; }
+      .experience { left: 5px; }
+      .cards { grid-template-columns: repeat(2,1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      section { padding: 65px 0; }
+      .container { padding: 0 20px; }
       .brand { font-size: 19px; }
+      .brand small { font-size: 8px; letter-spacing: 1px; }
+      .nav { min-height: 73px; }
+      .navlinks .btn { font-size: 11px; padding: 10px; }
+      .hero h1 { font-size: 46px; }
+      .hero p { font-size: 15px; }
+      .hero-image img { height: 400px; }
+      .experience { padding: 12px 18px; }
+      .experience strong { font-size: 26px; }
+      .trust-grid { gap: 8px; }
+      .trust-grid strong { font-size: 13px; }
+      .trust-grid div { font-size: 10px; }
+      .cards,.steps,.review-grid,.footer-grid { grid-template-columns: 1fr; }
+      .cards { gap: 14px; }
+      .photo,.heritage-photo { height: 370px; }
+      .floating-wa { right: 14px; bottom: 14px; padding: 12px 15px; }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Shankar Aushdhalaya",
+    "url": "https://shankaraushdhalaya.com/",
+    "image": "https://shankaraushdhalaya.com/family.jpg",
+    "description": "Ayurvedic consultations in Jabalpur with a family heritage of traditional Ayurveda.",
+    "medicalSpecialty": "https://schema.org/Ayurvedic",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jabalpur",
+      "addressRegion": "Madhya Pradesh",
+      "addressCountry": "IN"
+    },
+    "priceRange": "Consultations from INR 699"
+  }
+  </script>
 </head>
+
 <body>
+
 <header>
-  <nav class="container">
+  <div class="container nav">
     <a class="brand" href="#">
       Shankar Aushdhalaya
       <small>TRADITIONAL AYURVEDA · JABALPUR</small>
     </a>
-    <div class="navlinks">
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#doctor">Our Practitioner</a>
+      <a href="#services">Consultations</a>
       <a href="#heritage">Our Heritage</a>
-      <a href="#consultations">Consultations</a>
-      <a href="#practitioner">Our Practitioner</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+      <a href="#booking" class="btn btn-primary">Book Consultation</a>
+    </nav>
+  </div>
 </header>
 
 <main>
-  <div class="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="eyebrow">A Family Legacy of Ayurveda</div>
-        <h1>Rooted in Tradition.<br>Guided by Care.</h1>
-        <p>Welcome to Shankar Aushdhalaya, an Ayurvedic clinic in the heart of Jabalpur, carrying forward the knowledge and dedication of Shri Mahesh Dutt Shastri Ji.</p>
-        <div class="actions">
-          <a class="btn" href="https://wa.me/918602855070?text=Namaste%2C%20I%20would%20like%20to%20enquire%20about%20an%20Ayurvedic%20consultation." target="_blank" rel="noopener noreferrer">Enquire on WhatsApp</a>
-          <a class="btn btn-outline" href="#heritage">Discover Our Heritage</a>
-        </div>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">A Family Heritage of Ayurveda</div>
+      <h1>Rooted in Tradition.<br><em>Guided by Care.</em></h1>
+      <p>
+        Welcome to Shankar Aushdhalaya, Jabalpur.
+        Experience a personalised approach to traditional Ayurveda,
+        guided by Dr. Rajaish Sharma and over three decades of experience.
+      </p>
+      <div class="buttons">
+        <a href="#booking" class="btn btn-primary">Book Your Consultation →</a>
+        <a href="#doctor" class="btn btn-outline">Meet Our Practitioner</a>
       </div>
-      <div class="hero-art" aria-label="Ayurveda inspired illustration">🌿</div>
+      <p style="font-size:13px;margin-top:22px">
+        Personalised Consultations · Starting at ₹699
+      </p>
+    </div>
+    <div class="hero-image">
+      <img src="family.jpg" alt="Dr. Rajaish Sharma at Shankar Aushdhalaya, Jabalpur" fetchpriority="high">
+      <div class="experience">
+        <strong>30+ Years</strong>
+        <span>Of Professional Experience</span>
+      </div>
     </div>
   </div>
+</section>
 
-  <section id="heritage" class="heritage">
-    <div class="container two-col">
-      <div>
-        <img class="portrait" src="grandfather.jpg" alt="Shri Mahesh Dutt Shastri Ji" loading="lazy">
-      </div>
-      <div>
-        <div class="eyebrow">Our Heritage</div>
-        <h2 class="section-title">A Legacy Worth Preserving</h2>
-        <p>Shankar Aushdhalaya carries forward the Ayurvedic tradition associated with Shri Mahesh Dutt Shastri Ji, a respected and well-known figure in Jabalpur's Ayurvedic community.</p>
-        <p>His dedication to traditional knowledge and personal care helped establish a family legacy that continues to inspire the clinic today.</p>
-        <p>We honour that heritage through a thoughtful, individual approach to Ayurvedic consultation.</p>
+<div class="trustbar">
+  <div class="container trust-grid">
+    <div><strong>30+ Years</strong>Practitioner Experience</div>
+    <div><strong>Family Heritage</strong>Traditional Ayurveda</div>
+    <div><strong>Jabalpur</strong>Personalised Consultations</div>
+  </div>
+</div>
+
+<section id="doctor">
+  <div class="container split">
+    <div>
+      <img class="photo" src="family.jpg" alt="Portrait of Dr. Rajaish Sharma" loading="lazy">
+    </div>
+    <div>
+      <div class="eyebrow">Meet Your Practitioner</div>
+      <h2>Dr. Rajaish Sharma</h2>
+      <div class="highlight">Over 30 Years of Experience in Ayurvedic Practice</div>
+      <p>
+        At Shankar Aushdhalaya, we believe that understanding
+        the individual is an important part of Ayurvedic care.
+      </p>
+      <p>
+        With more than three decades of experience, Dr. Rajaish Sharma
+        carries forward the family's commitment to traditional Ayurveda,
+        attentive consultations and personalised guidance.
+      </p>
+      <p>
+        Every consultation begins with understanding your concerns,
+        health history, lifestyle and individual needs before
+        discussing suitable next steps.
+      </p>
+      <a href="#booking" class="btn btn-primary">Consult Dr. Rajaish Sharma →</a>
+    </div>
+  </div>
+</section>
+
+<section class="pale" id="services">
+  <div class="container">
+    <div class="center">
+      <div class="eyebrow">Areas of Consultation</div>
+      <h2>Ayurvedic Guidance for Everyday Health</h2>
+      <p>
+        Explore personalised consultations for common health and
+        wellness concerns. Recommendations depend on individual
+        assessment and medical suitability.
+      </p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="symbol">🌿</div>
+        <h3>Digestive Health</h3>
+        <p>Consultations for concerns such as acidity, bloating, constipation and digestive discomfort.</p>
+      </article>
+      <article class="card">
+        <div class="symbol">🦴</div>
+        <h3>Joint & Muscle Comfort</h3>
+        <p>Guidance for joint stiffness, recurring discomfort and lifestyle factors affecting mobility.</p>
+      </article>
+      <article class="card">
+        <div class="symbol">🌙</div>
+        <h3>Sleep & Stress</h3>
+        <p>Discuss sleep routines, stress-related lifestyle concerns and approaches to general wellbeing.</p>
+      </article>
+      <article class="card">
+        <div class="symbol">🍃</div>
+        <h3>Skin & Hair Wellness</h3>
+        <p>Individual consultations for common skin and hair concerns, with appropriate referrals when needed.</p>
+      </article>
+      <article class="card">
+        <div class="symbol">🌼</div>
+        <h3>Women's Wellness</h3>
+        <p>Personalised lifestyle discussions for women's general wellness and related concerns.</p>
+      </article>
+      <article class="card">
+        <div class="symbol">☀️</div>
+        <h3>Preventive Wellness</h3>
+        <p>Explore daily routines, nutrition, seasonal habits and sustainable approaches to wellbeing.</p>
+      </article>
+    </div>
+    <p class="center" style="font-size:12px;margin-top:25px">
+      These are consultation categories, not promises of treatment or cure.
+      Serious or persistent symptoms require appropriate medical evaluation.
+    </p>
+  </div>
+</section>
+
+<section id="heritage">
+  <div class="container split">
+    <div>
+      <div class="eyebrow">Our Heritage</div>
+      <h2>A Legacy of Knowledge, Passed Through Generations.</h2>
+      <p>
+        Shankar Aushdhalaya honours the legacy of
+        Shri Mahesh Dutt Shastri Ji, whose dedication to traditional
+        Ayurvedic knowledge remains an inspiration to the family.
+      </p>
+      <p>
+        Today, Dr. Rajaish Sharma continues that heritage with a
+        commitment to individual attention, thoughtful guidance
+        and respect for the traditions of Ayurveda.
+      </p>
+      <div class="highlight">
+        Traditional wisdom. Personal attention. A commitment to care.
       </div>
     </div>
-  </section>
+    <div>
+      <img class="heritage-photo" src="grandfather.jpg" alt="Shri Mahesh Dutt Shastri Ji, family heritage of Shankar Aushdhalaya" loading="lazy">
+    </div>
+  </div>
+</section>
 
-  <section id="consultations">
-    <div class="container">
-      <div class="eyebrow">What We Offer</div>
-      <h2 class="section-title">Personalised Ayurvedic Care</h2>
-      <p>Our consultations focus on understanding each individual's concerns and offering guidance within the principles of Ayurveda.</p>
-      <div class="cards">
-        <div class="card">
-          <h3>Ayurvedic Consultation</h3>
-          <p>Discuss your health concerns with the practitioner and receive individual guidance based on an Ayurvedic assessment.</p>
-        </div>
-        <div class="card">
-          <h3>Traditional Knowledge</h3>
-          <p>An approach informed by the family's heritage of traditional Ayurvedic practice.</p>
-        </div>
-        <div class="card">
-          <h3>Health & Lifestyle Guidance</h3>
-          <p>Individual discussions about everyday habits, diet and lifestyle as relevant to your consultation.</p>
-        </div>
+<section class="pale" id="process">
+  <div class="container">
+    <div class="center">
+      <div class="eyebrow">How It Works</div>
+      <h2>Your Consultation, Made Simple</h2>
+      <p>Getting started is easy. Begin with a WhatsApp enquiry and our team can guide you through the next steps.</p>
+    </div>
+    <div class="steps center">
+      <div class="step">
+        <div class="step-number">01</div>
+        <h3>Share Your Concern</h3>
+        <p>Contact us on WhatsApp and briefly describe the reason for your consultation.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">02</div>
+        <h3>Book Your Appointment</h3>
+        <p>Confirm availability, consultation format and the applicable fee with our team.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">03</div>
+        <h3>Receive Personalised Guidance</h3>
+        <p>Discuss your health history and concerns with the practitioner and understand suitable next steps.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="practitioner" class="practitioner">
-    <div class="container two-col">
-      <div>
-        <div class="eyebrow">Continuing the Tradition</div>
-        <h2 class="section-title">The Next Generation of Care</h2>
-        <p>Today, the family tradition of Shankar Aushdhalaya continues through the next generation.</p>
-        <p>Building upon the legacy of Shri Mahesh Dutt Shastri Ji, the clinic welcomes patients seeking personal Ayurvedic consultations in Jabalpur.</p>
-        <a class="btn" href="#contact">Contact the Clinic</a>
+<section id="booking" class="booking">
+  <div class="container center">
+    <div class="eyebrow">Begin Your Wellness Journey</div>
+    <h2>Book Your Ayurvedic Consultation</h2>
+    <p>
+      Speak with our team to arrange a consultation
+      with Dr. Rajaish Sharma at Shankar Aushdhalaya.
+    </p>
+    <div class="price">₹699 <small>onwards</small></div>
+    <p>Starting consultation fee · Final fee confirmed before booking</p>
+    <a href="#" class="btn btn-light whatsapp-link">Enquire & Book on WhatsApp →</a>
+    <p class="booking-note">
+      Appointment availability and consultation format will be confirmed on WhatsApp.
+    </p>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+    <div class="center">
+      <div class="eyebrow">Patient Experiences</div>
+      <h2>Care Built on Trust</h2>
+      <p>
+        We look forward to sharing genuine patient experiences here.
+        Reviews will be published only with permission and
+        without disclosing private medical information.
+      </p>
+    </div>
+    <div class="review-grid">
+      <div class="review-card">
+        <h3>Personal Attention</h3>
+        <p>Our approach begins with listening carefully to each person's concerns and circumstances.</p>
       </div>
-      <div>
-        <img class="portrait" src="family.jpg" alt="Family of Shankar Aushdhalaya" loading="lazy">
+      <div class="review-card">
+        <h3>Respect for Tradition</h3>
+        <p>Our family heritage inspires our commitment to thoughtful, individualised Ayurvedic consultations.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <div class="eyebrow" style="color:#e5c28b">Visit Our Clinic</div>
-      <h2 class="section-title">We Look Forward to Welcoming You</h2>
-      <p>Shankar Aushdhalaya<br>
-      Near Shri Chhote Mahaveer Ji Maharaj Temple<br>
-      Patan Marg, Sarafa Bazar, Jabalpur, Madhya Pradesh</p>
-      <div class="actions" style="justify-content:center">
-        <a class="btn" href="https://wa.me/918602855070" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
-        <a class="btn" href="https://maps.app.goo.gl/WEepCA98AD63vmxu6" target="_blank" rel="noopener noreferrer">Get Directions</a>
-      </div>
-      <p style="font-size:12px;margin-top:25px">Please confirm consultation availability before visiting.</p>
+<section class="pale" id="faq">
+  <div class="container" style="max-width:850px">
+    <div class="center">
+      <div class="eyebrow">Common Questions</div>
+      <h2>Frequently Asked Questions</h2>
     </div>
-  </section>
+
+    <h3>How much does a consultation cost?</h3>
+    <p>Consultations start at ₹699. The applicable fee will be confirmed before booking.</p>
+
+    <h3>How do I book an appointment?</h3>
+    <p>Use the WhatsApp booking button to contact our team and enquire about appointment availability.</p>
+
+    <h3>Will I receive personalised recommendations?</h3>
+    <p>Consultations are intended to consider your individual concerns, health history and lifestyle before discussing suitable recommendations.</p>
+
+    <h3>Should I stop my existing medication?</h3>
+    <p>No. Do not stop or change prescribed medication without discussing it with your treating clinician. Tell your practitioner about all medicines and supplements you use.</p>
+  </div>
+</section>
+
 </main>
 
 <footer>
-  © <span id="year"></span> Shankar Aushdhalaya · Jabalpur, Madhya Pradesh
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Shankar Aushdhalaya</h3>
+        <p>Traditional Ayurveda · Jabalpur</p>
+        <p>
+          A family heritage of Ayurvedic knowledge,
+          carried forward through personalised consultations.
+        </p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <p><a href="#doctor">Our Practitioner</a></p>
+        <p><a href="#services">Consultation Areas</a></p>
+        <p><a href="#heritage">Our Heritage</a></p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Jabalpur, Madhya Pradesh, India</p>
+        <p><a href="#" class="whatsapp-link">Book via WhatsApp →</a></p>
+        <p>Consultations from ₹699</p>
+      </div>
+    </div>
+    <div class="disclaimer">
+      Medical information on this website is general and does not
+      replace individual medical advice, diagnosis or emergency care.
+      Ayurvedic products and treatments may have risks or interactions.
+      Seek urgent medical help for emergencies.
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> Shankar Aushdhalaya. All rights reserved.
+    </div>
+  </div>
 </footer>
+
+<a href="#" class="floating-wa whatsapp-link" aria-label="Enquire on WhatsApp">
+  ☎ WhatsApp Us
+</a>
+
 <script>
+  // REPLACE WITH THE CLINIC'S WHATSAPP NUMBER.
+  // Use country code 91 and ten digits, without + or spaces.
+  const WHATSAPP_NUMBER = "918602855070";
+
+  const message = encodeURIComponent(
+    "Namaste, I would like to enquire about an Ayurvedic consultation at Shankar Aushdhalaya. I saw that consultations start at ₹699. Please share the available appointment options."
+  );
+
+  document.querySelectorAll(".whatsapp-link").forEach(link => {
+    if (/^\d{12}$/.test(WHATSAPP_NUMBER) && WHATSAPP_NUMBER.startsWith("91")) {
+      link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    } else {
+      link.href = "javascript:void(0)";
+      link.addEventListener("click", event => {
+        event.preventDefault();
+        alert("WhatsApp booking will be available shortly.");
+      });
+    }
+  });
+
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
