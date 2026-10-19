@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shankar Aushdhalaya - Traditional Ayurvedic consultations in Sarafa Bazar, Jabalpur. Continuing the legacy of Shri Mahesh Dutt Shastri Ji.">
+  <title>Shankar Aushdhalaya | Ayurveda in Jabalpur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #183e30;
+      --light: #f8f6ed;
+      --gold: #b28b51;
+      --text: #29372f;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text);
+      background: var(--light);
+      line-height: 1.7;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.2;
+    }
+    a { text-decoration: none; }
+    .container { max-width: 1120px; margin: auto; padding: 0 24px; }
+    header {
+      background: #fffdf7;
+      border-bottom: 1px solid #e9e5d8;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 78px;
+      gap: 20px;
+    }
+    .brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--green);
+    }
+    .brand small {
+      display: block;
+      font: 10px 'DM Sans', sans-serif;
+      letter-spacing: 2px;
+      color: var(--gold);
+    }
+    .navlinks { display: flex; gap: 25px; }
+    .navlinks a { color: var(--green); font-size: 14px; }
+    .btn {
+      display: inline-block;
+      background: var(--green);
+      color: white;
+      padding: 13px 23px;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--green);
+      border: 1px solid var(--green);
+    }
+    .hero {
+      padding: 105px 0;
+      background: linear-gradient(115deg, #f7f3e6, #e6eee3);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .eyebrow {
+      color: #99723c;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    h1 { font-size: clamp(42px, 5vw, 70px); color: var(--green); margin: 20px 0; }
+    .hero p { font-size: 18px; max-width: 570px; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+    .hero-art {
+      border: 1px solid #d6c8a9;
+      border-radius: 160px 160px 12px 12px;
+      min-height: 390px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle, #f9f4db, #b9cdb8);
+      font-size: 110px;
+    }
+    section { padding: 85px 0; }
+    .section-title { font-size: 42px; color: var(--green); margin: 12px 0 25px; }
+    .heritage { background: white; }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+    .portrait {
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      object-position: center 20%;
+      border-radius: 8px;
+      background: #e8e5dd;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 35px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e7e5db;
+      border-radius: 8px;
+      padding: 30px;
+    }
+    .card h3 { color: var(--green); font-size: 23px; }
+    .practitioner { background: #eaf0e8; }
+    .contact { background: var(--green); color: white; text-align: center; }
+    .contact h2 { color: white; }
+    .contact p { color: #e2e8df; }
+    .contact .btn { background: #f2e4c7; color: var(--green); }
+    footer {
+      background: #102d22;
+      color: #d6e2d8;
+      text-align: center;
+      padding: 25px;
+      font-size: 13px;
+    }
+    @media(max-width: 760px) {
+      .navlinks { display: none; }
+      .hero { padding: 65px 0; }
+      .hero-grid, .two-col, .cards { grid-template-columns: 1fr; }
+      .hero-art { min-height: 240px; font-size: 80px; }
+      section { padding: 60px 0; }
+      .section-title { font-size: 34px; }
+      .brand { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <a class="brand" href="#">
+      Shankar Aushdhalaya
+      <small>TRADITIONAL AYURVEDA · JABALPUR</small>
+    </a>
+    <div class="navlinks">
+      <a href="#heritage">Our Heritage</a>
+      <a href="#consultations">Consultations</a>
+      <a href="#practitioner">Our Practitioner</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">A Family Legacy of Ayurveda</div>
+        <h1>Rooted in Tradition.<br>Guided by Care.</h1>
+        <p>Welcome to Shankar Aushdhalaya, an Ayurvedic clinic in the heart of Jabalpur, carrying forward the knowledge and dedication of Shri Mahesh Dutt Shastri Ji.</p>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/918602855070?text=Namaste%2C%20I%20would%20like%20to%20enquire%20about%20an%20Ayurvedic%20consultation." target="_blank" rel="noopener noreferrer">Enquire on WhatsApp</a>
+          <a class="btn btn-outline" href="#heritage">Discover Our Heritage</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Ayurveda inspired illustration">🌿</div>
+    </div>
+  </div>
+
+  <section id="heritage" class="heritage">
+    <div class="container two-col">
+      <div>
+        <img class="portrait" src="grandfather.jpg" alt="Shri Mahesh Dutt Shastri Ji" loading="lazy">
+      </div>
+      <div>
+        <div class="eyebrow">Our Heritage</div>
+        <h2 class="section-title">A Legacy Worth Preserving</h2>
+        <p>Shankar Aushdhalaya carries forward the Ayurvedic tradition associated with Shri Mahesh Dutt Shastri Ji, a respected and well-known figure in Jabalpur's Ayurvedic community.</p>
+        <p>His dedication to traditional knowledge and personal care helped establish a family legacy that continues to inspire the clinic today.</p>
+        <p>We honour that heritage through a thoughtful, individual approach to Ayurvedic consultation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="consultations">
+    <div class="container">
+      <div class="eyebrow">What We Offer</div>
+      <h2 class="section-title">Personalised Ayurvedic Care</h2>
+      <p>Our consultations focus on understanding each individual's concerns and offering guidance within the principles of Ayurveda.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Ayurvedic Consultation</h3>
+          <p>Discuss your health concerns with the practitioner and receive individual guidance based on an Ayurvedic assessment.</p>
+        </div>
+        <div class="card">
+          <h3>Traditional Knowledge</h3>
+          <p>An approach informed by the family's heritage of traditional Ayurvedic practice.</p>
+        </div>
+        <div class="card">
+          <h3>Health & Lifestyle Guidance</h3>
+          <p>Individual discussions about everyday habits, diet and lifestyle as relevant to your consultation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="practitioner" class="practitioner">
+    <div class="container two-col">
+      <div>
+        <div class="eyebrow">Continuing the Tradition</div>
+        <h2 class="section-title">The Next Generation of Care</h2>
+        <p>Today, the family tradition of Shankar Aushdhalaya continues through the next generation.</p>
+        <p>Building upon the legacy of Shri Mahesh Dutt Shastri Ji, the clinic welcomes patients seeking personal Ayurvedic consultations in Jabalpur.</p>
+        <a class="btn" href="#contact">Contact the Clinic</a>
+      </div>
+      <div>
+        <img class="portrait" src="family.jpg" alt="Family of Shankar Aushdhalaya" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="eyebrow" style="color:#e5c28b">Visit Our Clinic</div>
+      <h2 class="section-title">We Look Forward to Welcoming You</h2>
+      <p>Shankar Aushdhalaya<br>
+      Near Shri Chhote Mahaveer Ji Maharaj Temple<br>
+      Patan Marg, Sarafa Bazar, Jabalpur, Madhya Pradesh</p>
+      <div class="actions" style="justify-content:center">
+        <a class="btn" href="https://wa.me/918602855070" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+        <a class="btn" href="https://maps.app.goo.gl/WEepCA98AD63vmxu6" target="_blank" rel="noopener noreferrer">Get Directions</a>
+      </div>
+      <p style="font-size:12px;margin-top:25px">Please confirm consultation availability before visiting.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Shankar Aushdhalaya · Jabalpur, Madhya Pradesh
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
